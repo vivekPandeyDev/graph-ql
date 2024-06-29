@@ -1,6 +1,8 @@
+# Overview
+GraphQL is a query language for APIs that allows clients to request specific data they need. It provides a more efficient and flexible alternative to traditional REST APIs by enabling clients to define the structure of the data they require. Here are some key concepts and features of GraphQL:
 # Read Me First
 The following was discovered as part of building this project:
-Created a basic graph-ql with employee and department, where multiple department is mapped to single employee.
+Created a basic graph-ql with employee and department, where multiple department is mapped to single employee. `EMPLOYEE (*) ------ (1) DEPARTMENT` .
 ## Feature
 * Interceptor 
 * Exception Handling
