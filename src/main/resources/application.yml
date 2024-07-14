@@ -1,0 +1,19 @@
+spring:
+  profiles:
+    active: prod
+  graphql:
+    graphiql:
+      enabled: true
+  h2:
+    console.enabled: true
+  application:
+    name: graph-ql
+  datasource:
+    username: root
+    url: jdbc:h2:file:./graph-ql;DB_CLOSE_ON_EXIT=FALSE
+    password: sa
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect   # Database dialect
+    hibernate:
+      ddl-auto: update                            # DDL mode for schema initialization (e.g., create-drop, update)
+    show-sql: true
