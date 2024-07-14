@@ -14,6 +14,18 @@ Created a basic graph-ql with employee and department, where multiple department
 
 # Getting Started
 
+# Installation Guide
+### Navigate to the parent Dir of Dockerfile and docker-compose
+#####
+    1. docker build --no-cache -t graph-ql-app .
+    2. docker-compose up --build
+#####
+### To check logs
+#####
+    1. docker-compose logs postgres-db
+    2. docker-compose logs graph-ql-app
+#####
+
 ### Reference Documentation
 For further reference, please consider the following sections:
 

@@ -1,0 +1,13 @@
+server:
+  port: 8082
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    username: ${SPRING_DATASOURCE_USERNAME:alex}
+    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://localhost:5432/company}
+    password: ${SPRING_DATASOURCE_PASSWORD:alex}
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect   # Database dialect
+    hibernate:
+      ddl-auto: update                            # DDL mode for schema initialization (e.g., create-drop, update)
+    show-sql: true

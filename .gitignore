@@ -35,4 +35,3 @@ build/
 ### db ###
 graph-ql.mv.db
 graph-ql.trace.db 
-social.mv.db
